@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "case-ui-system",
   "type": "module",
   "version": "0.0.1",
   "engines": {
@@ -16,5 +16,8 @@
   },
   "allowScripts": {
     "esbuild": true
+  },
+  "devDependencies": {
+    "sass": "^1.104.1"
   }
 }
