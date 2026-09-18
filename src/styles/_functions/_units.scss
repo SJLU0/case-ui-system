@@ -1,0 +1,10 @@
+@use "sass:math";
+
+/*
+ * Rem
+ *
+ * 說明：將像素數值依照基準字級轉換為 rem，預設基準為 16。
+ */
+@function rem($pixels, $context: 16) {
+  @return math.div($pixels, $context) * 1rem;
+}
