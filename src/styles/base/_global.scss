@@ -1,0 +1,15 @@
+/*
+ * Global
+ *
+ * 說明：設定 Case UI System 的全域基礎樣式，並補充 Modern CSS Reset 未處理的項目。
+ */
+
+body {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}

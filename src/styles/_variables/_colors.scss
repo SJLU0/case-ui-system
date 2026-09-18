@@ -1,0 +1,79 @@
+/*
+ * 色彩變數檔
+ *
+ * 說明：提供 Case UI System 的基礎色票、語意色......，以便元件直接引用。
+ *
+ */
+
+// Beige
+$beige-light: #f5e7d0;
+$beige-dark: #eed7b0;
+
+// Blue
+$blue-light: #34a9e3;
+$blue-dark: #1b68b5;
+
+// Brown
+$brown-light: #a34c0b;
+$brown-dark: #843322;
+
+// Gray
+$gray-light: #e5e5e5;
+$gray-dark: #6b6b6b;
+
+// Green
+$green-pale: #d9eee9;
+$green-light: #058269;
+$green-dark: #005850;
+
+// Lime
+$lime-light: #e1e79d;
+$lime-dark: #c3d013;
+
+// Orange
+$orange-light: #ffc894;
+$orange-dark: #f08f2b;
+
+// Red
+$red-pale: #fbe4df;
+$red-light: #e75036;
+$red-dark: #c8442b;
+
+// Yellow
+$yellow-light: #feff32;
+$yellow-dark: #ffcf38;
+
+// Base
+$cream: #fcf7f0;
+$white: #ffffff;
+
+// Brand
+$primary: $green-dark;
+$secondary: $lime-dark;
+
+// Status
+$status-warning-text: $brown-dark;
+$status-warning-bg: $orange-light;
+$status-danger-text: $red-dark;
+$status-danger-bg: $red-pale;
+$status-success-text: $green-dark;
+$status-success-bg: $green-pale;
+
+// Market
+$market-flat: $gray-dark;
+$market-up: $red-dark;
+$market-down: $green-light;
+
+// Background
+$bg-main: $cream;
+$bg-white: $white;
+$bg-disabled: #cbcbcb;
+
+// Text
+$text-main: #333333;
+$text-light: $cream;
+$text-gray: $gray-dark;
+$text-success: $status-success-text;
+$text-danger: $status-danger-text;
+$text-warning: $status-warning-text;
+$text-disabled: #4d4d4d;

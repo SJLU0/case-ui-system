@@ -1,8 +1,64 @@
+@use "../../_variables/colors";
+@use "../../_functions/units";
+
 /*
  * Button
  *
  * 說明：提供按鈕原子元件的基礎樣式。
  * 
  * 1. 使用rem，避免受外層容器字級影響
- * 2. 此樣式有可能被拿去做成<a>連結，因此<button>跟<a>的預設樣式都要處理
+ * 2. 此樣式有可能被拿去做成<a>連結或tab樣式，因此<button>跟<a>的預設樣式、is-active狀態都要處理
+ *
+ * 狀態：hover、active
  */
+
+.a-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 12px;
+  font-size: units.rem(16);
+  font-weight: 700;
+  border-radius: 8px;
+  border: 0;
+  color: colors.$green-light;
+  background-color: colors.$lime-light;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    background-color: colors.$lime-dark;
+  }
+
+  &:active,
+  &.is-active {
+    background-color: colors.$orange-light;
+  }
+
+  &:disabled,
+  &.is-disabled {
+    color: colors.$text-disabled;
+    background-color: colors.$bg-disabled;
+    cursor: not-allowed;
+  }
+
+  //Ｍodifier
+  &.-sm {
+    padding: 6px 8px;
+    font-size: units.rem(14);
+  }
+
+  &.-lg {
+    padding: 12px 16px;
+    font-size: units.rem(20);
+  }
+
+  &.-full {
+    width: 100%;
+  }
+
+  &.-fixed {
+    width: 120px;
+  }
+}

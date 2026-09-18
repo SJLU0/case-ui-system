@@ -1,4 +1,5 @@
-@use './base/reset';
+@use "./base/reset";
+@use "./base/global";
 
 /*
 * Atoms
@@ -6,4 +7,13 @@
 * 說明：
 */
 
-@use './components/atoms/buttons';
+@use "./components/atoms/badges";
+@use "./components/atoms/buttons";
+@use "./components/atoms/icons";
+
+/*
+* 屬於專案展示頁的元件
+*
+* 說明：
+*/
+@use "./project/project";

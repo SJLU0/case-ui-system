@@ -1,5 +1,15 @@
 {
   "files.associations": {
     "*.html": "html"
+  },
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "[scss]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }

@@ -1,0 +1,34 @@
+@use "../_variables/colors";
+@use "../_functions/units";
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.project-card {
+  padding: 20px;
+  border-radius: 16px;
+  border: 2px solid colors.$blue-light;
+  background-color: colors.$bg-white;
+
+  &__header {
+    padding-bottom: 8px;
+    border-bottom: 2px solid colors.$blue-light;
+  }
+
+  &__title {
+    font-size: units.rem(32);
+    font-weight: 700;
+    color: colors.$blue-light;
+  }
+
+  &__main {
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
