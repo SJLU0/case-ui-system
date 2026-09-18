@@ -1,0 +1,47 @@
+@use "../../_variables/colors";
+@use "../../_functions/units";
+
+/*
+ * Badge
+ *
+ * 說明：提供標籤原子元件的基礎樣式，用於顯示分類、狀態或簡短資訊。
+ *
+ * 1. 使用 rem，避免受外層容器字級影響
+ * 2. 預設依文字內容自動延伸寬度
+ * 3. 尺寸與造型分開控制，可依需求組合使用
+ *
+ * 尺寸：sm、default、lg
+ * 造型：default、rounded、leaf
+ */
+
+.a-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  font-size: units.rem(14);
+  font-weight: 700;
+  color: colors.$green-light;
+  background-color: colors.$green-pale;
+  border-radius: 4px;
+
+  // Modifier - Size
+  &.-sm {
+    padding: 2px 6px;
+    font-size: units.rem(12);
+  }
+
+  &.-lg {
+    padding: 6px 12px;
+    font-size: units.rem(16);
+  }
+
+  // Modifier - Shape
+  &.-pill {
+    border-radius: 999px;
+  }
+
+  &.-leaf {
+    border-radius: 12px 0 12px 0;
+  }
+}
